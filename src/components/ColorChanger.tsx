@@ -18,8 +18,7 @@ class ColorChanger extends React.Component<{}, State> {
   onChange = () => this.changeColor();
 
   changeColor() {
-    const currColor = this.randomColor();
-    this.setState({color: currColor});
+    this.setState({color: this.randomColor()});
   }
   
   render() {
